@@ -15,7 +15,9 @@ function App() {
           <h2>On</h2>
         </SwithContainer.On>
         <SwithContainer.Off />
-        <SwithContainer.Switch />
+        <div>
+          <SwithContainer.Switch />
+        </div>
       </SwithContainer>
     </div>
   );
