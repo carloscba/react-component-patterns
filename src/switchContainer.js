@@ -24,7 +24,12 @@ class SwitchContainer extends React.Component {
       }
     )
     */
-    this.setState(({ on }) => ({ on: !on }));
+    this.setState(
+      ({ on }) => ({ on: !on }),
+      () => {
+        this.props.onToggle(this.state.on);
+      }
+    );
   };
 
   render() {
