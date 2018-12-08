@@ -2,8 +2,8 @@ import React from "react";
 import Switch from "./components/switch";
 
 class SwitchContainer extends React.Component {
-  static On = ({ on }) => {
-    return on && <h2>On</h2>;
+  static On = ({ on, children }) => {
+    return on && children;
   };
   static Off = ({ on }) => {
     return !on && <h2>Off</h2>;

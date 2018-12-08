@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="App">
       <SwithContainer onToggle={handleOnToggle}>
-        <SwithContainer.On />
+        <SwithContainer.On>
+          <h2>On</h2>
+        </SwithContainer.On>
         <SwithContainer.Off />
         <SwithContainer.Switch />
       </SwithContainer>
